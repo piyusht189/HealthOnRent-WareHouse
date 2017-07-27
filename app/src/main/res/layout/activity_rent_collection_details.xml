@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.bshealthcare.healthonrent_warehouse.RentCollectionDetails">
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/zxing_custom_viewfinder_laser"
+        android:gravity="center"
+        android:text="Options"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/zxing_status_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/textView6"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+            <TextView
+                android:id="@+id/oid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#501f50"
+                android:gravity="center"
+                android:text="Oid"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#33443a"
+                android:gravity="center"
+                android:text="type"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="24sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#201f50"
+                android:gravity="center"
+                android:text="nm"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:autoLink="phone"
+                android:background="#443833"
+                android:gravity="center"
+                android:text="phoneno"
+                android:textColor="@color/cardview_light_background" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+
+            <TextView
+                android:id="@+id/invno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#89872b"
+                android:gravity="center"
+                android:text="invno"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/rs"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#2b8987"
+                android:gravity="center"
+                android:text="rs"
+                android:textColor="#fff"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+
+
+            <TextView
+                android:id="@+id/due"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#892b2d"
+                android:gravity="center"
+                android:text="due"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#461f50"
+                android:gravity="center"
+                android:text="address"
+                android:textColor="@color/cardview_light_background" />
+
+            <Button
+                android:id="@+id/track"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#451f28"
+                android:gravity="center"
+                android:text="TRACk"
+                android:onClick="track"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="18sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4">
+
+            <Button
+                android:id="@+id/drop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#135b31"
+                android:gravity="center"
+                android:text="Drop"
+                android:onClick="drop"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

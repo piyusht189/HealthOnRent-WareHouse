@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeded"
+    tools:context="com.bshealthcare.healthonrent_warehouse.RentCollection">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/zxing_custom_viewfinder_laser"
+        android:gravity="center"
+        android:text="Rent Collection Arena"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/zxing_status_text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#bbb"
+        android:hint="Enter O-ID"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textColorHint="#535151"
+        android:id="@+id/oidsearch"
+        android:layout_alignTop="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="search"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/search"
+        android:text=""
+        />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/oidsearch"
+        android:layout_centerHorizontal="true"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="20.0sp"
+        android:layout_marginTop="15dp" />
+
+</RelativeLayout>

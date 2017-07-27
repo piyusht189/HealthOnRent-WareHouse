@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bshealthcare.healthonrent_warehouse.WareHouseTransfer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/zxing_custom_viewfinder_laser"
+                android:gravity="center"
+                android:text="Transfer Product to Another WareHouse"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/zxing_status_text" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/myspinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="68dp"
+                android:background="@color/green"
+                android:elevation="0dp"
+                android:onClick="transfer"
+                android:text="Transfer "
+                android:textColor="@color/zxing_status_text" />
+
+            <TextView
+                android:id="@+id/skuid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView6"
+                android:background="#317344"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/zxing_status_text" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="230dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/skuid"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42dp"
+                android:background="@color/mine"
+                android:gravity="center"
+                android:text="Choose WareHouse Below :"
+                android:textColor="@color/zxing_status_text"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/myspinner"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/textView4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="49dp"
+                android:background="@color/red"
+                android:gravity="center"
+                android:padding="10dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
